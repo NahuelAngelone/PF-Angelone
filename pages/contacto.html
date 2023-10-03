@@ -24,28 +24,30 @@
             </ul>
         </nav>
     </header>
-    <main id="info">
-        <section>
-            <h1>Casa Brune - Contacto</h1>
-        </section>
 
-        <section>
-            
-            <h2>Formulario de contacto</h2>
+    <main id="info">
+        <section class="gridtc">
+            <div class="tc1">
+                <h1>Casa Brune - Contacto</h1>
+            </div>
+            <div class="tc2">
+                <h2>Formulario de contacto</h2>
+            </div>
+        </section>
             <form class="formulario" action="" method="post" enctype="text/plain">
-                <fieldset>
+                <fieldset class="namefor">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nobmre" placeholder="Nombre" required>
                 </fieldset>
-                <fieldset>
+                <fieldset class="apeform">
                     <label for="apellido">Apellido</label>
                     <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
                 </fieldset>
-                <fieldset>
+                <fieldset   class="mailform">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                 </fieldset>
-                <fieldset>
+                <fieldset class="genform">
                     <label for="genero">Género</label>
                     <select name="Genero" name="genero" id="genero" required>
                         <option value="m">Masculino</option>
@@ -53,11 +55,11 @@
                         <option value="a">Prefiero no contestar</option>    
                     </select>
                 </fieldset>
-                <fieldset>
+                <fieldset class="consuform">
                     <label for="consulta">Dejanos tu consulta</label>
                     <textarea name="consulta" id="consulta" cols="30" rows="10" required></textarea>
                 </fieldset>
-                <fieldset>
+                <fieldset class="botform">
                     <input class="boton" type="reset" value="Borrar todo">
                     <input class="boton" type="submit" value="Envianos tu consulta">
                 </fieldset>

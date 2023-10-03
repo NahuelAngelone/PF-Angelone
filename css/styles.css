@@ -81,6 +81,16 @@ dd{
     font-style: oblique;
     color: rgb(0, 0, 0);
     font-weight: bold;
+    display: grid;
+    grid-template-areas: 
+    ". nf ."
+    ". af ."
+    ". mf ."
+    ". gf ."
+    ". cf ."
+    ". bf .";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px 50px 50px 50px 300px 90px;
 }
 
 .boton{
@@ -528,3 +538,51 @@ dd{
     }
 }
 
+/* grid */
+/*contacto*/ 
+
+.gridtc {
+    display: grid;
+    grid-template-areas: 
+        "tc1 tc1 tc1"
+        "tc2 tc2 tc2";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px 50px;
+    row-gap: 20px;
+}
+
+.tc1 {
+    grid-area: tc1;
+    justify-self: center;
+}
+
+.tc2 {
+    grid-area: tc2;
+    justify-self: center;
+}
+
+
+.namefor {
+    grid-area: nf;
+}
+
+.apeform {
+    grid-area: af;
+}
+
+.mailform {
+    grid-area: mf;
+}
+
+.genform {
+    grid-area: gf;
+}
+
+.consuform {
+    grid-area: cf;
+}
+
+.botform {
+    grid-area: bf;
+    padding-left: 50px;
+}
