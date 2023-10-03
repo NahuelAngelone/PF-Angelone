@@ -12,7 +12,7 @@
 
 .listasfoot {
     list-style-type: none;
-    padding: 25px;
+    padding: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
@@ -126,10 +126,8 @@ dd{
     #encabezado {
       justify-content:left;
       align-items: start;
+      height: 165px;
     }
-}
-
-@media screen and (max-width: 584px) {
     .listasnav {
       flex-direction: column;
       align-items: start;
@@ -245,10 +243,8 @@ dd{
         "maps"
         "copyr";
         grid-template-columns: 100%;
-        grid-row:  150px 150px 150px 150px 30px;
+        grid-row:  1fr 1fr 0.2fr 1fr 0.8fr;
     }
-}
-@media screen and (max-width: 885px) {
     #pie {
         height: 100%;
     }
