@@ -462,6 +462,7 @@ dd{
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50px 200px 200px 200px;
     row-gap: 50px;
+    column-gap: 50px;
 }
 
 .titulog {
@@ -610,4 +611,28 @@ dd{
 .botform {
     grid-area: bf;
     justify-self: center;
+}
+
+/*pagination BS*/
+
+.page-link {
+    background-color: rgb(100, 52, 29);
+    color: black; 
+    border-color: rgb(196 171 155);
+    font-weight: bold;
+}
+
+.page-link:hover {
+    background-color: #eea236;
+    color: white;
+}
+
+.pagination .page-item:active .page-link {
+    background-color: #eea236;
+    color: white; 
+}
+
+.pagination .page-item::selection .page-link {
+    background-color: #eea236;
+    color: white; 
 }
