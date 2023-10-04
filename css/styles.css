@@ -564,25 +564,33 @@ dd{
 
 .namefor {
     grid-area: nf;
+    justify-self: center;
 }
 
 .apeform {
     grid-area: af;
+    justify-self: center;
 }
 
 .mailform {
     grid-area: mf;
+    justify-self: center;
 }
 
 .genform {
     grid-area: gf;
+    justify-self: center;
 }
 
 .consuform {
     grid-area: cf;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .botform {
     grid-area: bf;
-    padding-left: 50px;
+    justify-self: center;
 }
