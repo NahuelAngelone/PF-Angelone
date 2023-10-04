@@ -22,6 +22,11 @@
 
 }
 
+#carouselExampleSlidesOnly {
+    width: 300px;
+    padding-bottom: 10px;
+}
+
 /* Estilos para los enlaces */
 .enlace {
     text-decoration: none;
