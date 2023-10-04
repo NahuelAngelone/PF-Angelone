@@ -98,12 +98,20 @@ dd{
     grid-template-rows: 50px 50px 50px 50px 300px 90px;
 }
 
-.boton{
+.btn-primary{
     padding: 5px;
     border-width: 3px; 
     border-style: outset; 
     border-color: rgb(100, 52, 29) rgb(0, 0, 0) rgb(100, 52, 29) rgb(0, 0, 0);
     font-style: oblique;
+    background-color: rgb(126, 97, 85);
+    color: black;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color: rgb(100, 52, 29); 
+    color: white; 
+    border-color: blanchedalmond;
 }
 .nave{
     height: 20px;
