@@ -291,7 +291,7 @@ dd{
         "Aute Aimg5"
         "Acom Acom";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 170px 190px 280px 270px 255px 20px;
+    grid-template-rows: 50px 220px 220px 320px 270px 295px 20px;
     row-gap: 15px
 }
 
@@ -335,17 +335,14 @@ dd{
 
 .Aimg3 {
     grid-area: Aimg3;
-    padding-top: 20px;
 }
 
 .Aimg4 {
     grid-area: Aimg4;
-    padding-top: 20px;
 }
 
 .Aimg5 {
     grid-area: Aimg5;
-    padding-top: 20px;
 }
 
 /*media queries alfareria*/
@@ -628,11 +625,6 @@ dd{
 }
 
 .pagination .page-item:active .page-link {
-    background-color: #eea236;
-    color: white; 
-}
-
-.pagination .page-item::selection .page-link {
     background-color: #eea236;
     color: white; 
 }
