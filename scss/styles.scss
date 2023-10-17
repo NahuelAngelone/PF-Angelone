@@ -5,10 +5,8 @@
     padding: 0;
   }
 
-// Variables 
-$Colorfondo1: rgb(196 171 155);
-$Colorfondo2: rgb(100, 52, 29);
-$Colorenlace1: rgb(238, 134, 15);
+// importamos
+@import "variables";
 
 // Estilos para la sección de información 
 #info{
