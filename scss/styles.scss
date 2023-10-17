@@ -143,10 +143,10 @@
       justify-content:left;
       align-items: start;
       height: 165px;
-    }
-    .listasnav {
-      flex-direction: column;
-      align-items: start;
+      .listasnav {
+        flex-direction: column;
+        align-items: start;
+      }
     }
 }
 
@@ -207,14 +207,26 @@
     }
 }
 @media screen and (max-width: 885px) {
-    h1 {
+    #info h1 {
         font-size: 30px;
     }
-    h2 {
+    #info h2 {
         font-size: 25px;
     }
-    h3 {
+    #info h3 {
         font-size: 13px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .grid1 {
+    grid-template-areas: 
+        "titulo titulo"
+        "sub1   sub5 "
+        "sub2   sub5"
+        "sub3   sub5"
+        "sub4   sub5";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 290px 200px 270px 150px 150px;
     }
 }
 
