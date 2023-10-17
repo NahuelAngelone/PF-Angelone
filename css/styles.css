@@ -269,14 +269,28 @@
   grid-area: Aimg5;
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 425px) {
   .grid2 {
     grid-template-areas: "Atitulo" "Aintro" "Amate" "Atec" "Afyu" "Aute";
     grid-template-columns: 100%;
-    grid-template-rows: 2% 16% 13% 21% 18% 17% 2%;
+    grid-template-rows: 30px 450px 380px 580px 480px 500px;
   }
 }
-@media screen and (max-width: 885px) {
+@media screen and (min-width: 425px) and (max-width: 729px) {
+  .grid2 {
+    grid-template-areas: "Atitulo" "Aintro" "Amate" "Atec" "Afyu" "Aute";
+    grid-template-columns: 100%;
+    grid-template-rows: 30px 350px 350px 500px 450px 500px;
+  }
+}
+@media screen and (min-width: 729px) and (max-width: 1441px) {
+  .grid2 {
+    grid-template-areas: "Atitulo" "Aintro" "Amate" "Atec" "Afyu" "Aute";
+    grid-template-columns: 100%;
+    grid-template-rows: 30px 250px 250px 350px 300px 400px;
+  }
+}
+@media screen and (max-width: 1441px) {
   .Aimg1, .Aimg2, .Aimg3, .Aimg4, .Aimg5, .Acom {
     display: none;
   }
