@@ -13,21 +13,21 @@
         font-size: 40px;
         font-style: oblique;
         text-decoration: underline;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        font-family: $fuente-comun;
     }
     h2 {
         font-size: 30px;
         font-style: oblique;
         text-decoration: underline;
         text-align: center;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        font-family: $fuente-comun;
     }
     p {
         font-weight: bold;
         font-style: oblique;
         padding: 15px;
         text-align: center;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: $fuente-comun;
       }
 }
 
