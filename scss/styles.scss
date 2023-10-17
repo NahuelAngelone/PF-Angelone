@@ -1,12 +1,6 @@
 
-// Estableciendo estilos globales para todos los elementos 
-* {
-    margin: 0;
-    padding: 0;
-  }
-
 // importamos
-@import "variables";
+@import "base";
 
 // Estilos para la sección de información 
 #info{
