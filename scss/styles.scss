@@ -395,7 +395,6 @@
         "ini nifa"
         "ava nifa";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 270px 300px;
     row-gap: 15px;
     .ctitulo {
         grid-area: titulo;
@@ -414,6 +413,37 @@
         padding: 0px 200px;
     }
 }
+// media queries cursos
+
+@media screen and (max-width: 1440px) {
+    .grid3 {
+        grid-template-areas:
+        "titulo"
+        "nifa"
+        "ini"
+        "ava";
+        grid-template-columns: 100%;
+        row-gap: 15px;
+    }
+    .grid3 .ctitulo {
+        grid-area: titulo;
+        justify-self: center;
+    }
+    .grid3 .cini {
+        grid-area: ini;
+        padding: 0;
+    }
+    .grid3 .cava {
+        grid-area: ava;
+        padding: 0;
+    }
+    .grid3 .cnifa {
+        grid-area: nifa;
+        padding: 0;
+    }
+}
+
+        
 // grid tuto
 
 .grid4 {
@@ -450,6 +480,44 @@
         padding-left: 320px;
     }
 }
+
+@media screen and (max-width: 623px) {
+    .grid4 {
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "up";
+        grid-template-columns: 100%;
+        grid-template-rows: 20px 300px 300px 300px;
+
+    }
+    .grid4 .video {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 624px) and (max-width: 1024px) {
+    .grid4 {
+        display: grid;
+        grid-template-areas: 
+            "titulo titulo"
+            "img1 img2"
+            "img3 img4"
+            "up up";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 300px 300px 20px;
+        row-gap: 20px;
+    }
+    .grid4 .video {
+        padding: 10px;
+    }
+}
+
+
 // Grid Galeria
 
 .gridgaleria {
@@ -501,6 +569,7 @@
         justify-self: center;
     }
 }
+
 // media queries alfareria
 
 @media screen and (max-width: 485px) {
