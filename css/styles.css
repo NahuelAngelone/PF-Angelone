@@ -1,630 +1,467 @@
-
-/* Estableciendo estilos globales para todos los elementos */
 * {
-    margin: 0;
-    padding: 0;
-  }
-
-/* Estilos para la sección de información */
-#info{
-    background-color: rgb(196 171 155);
+  margin: 0;
+  padding: 0;
 }
 
-.listasfoot {
-    list-style-type: none;
-    padding: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+#info {
+  background-color: rgb(196, 171, 155);
+}
+#info #carouselExampleSlidesOnly {
+  width: 300px;
+  padding-bottom: 10px;
+}
+#info h1 {
+  font-size: 40px;
+  font-style: oblique;
+  text-decoration: underline;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#info h2 {
+  font-size: 30px;
+  font-style: oblique;
+  text-decoration: underline;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#info p {
+  font-weight: bold;
+  font-style: oblique;
+  padding: 15px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.listasredes {
-    list-style-type: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
-}
-
-#carouselExampleSlidesOnly {
-    width: 300px;
-    padding-bottom: 10px;
-}
-
-/* Estilos para los enlaces */
 .enlace {
-    text-decoration: none;
-    color: rgb(238, 134, 15);
-    padding: 5px;
-    grid-area: enlace;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  text-decoration: none;
+  color: rgb(238, 134, 15);
+  padding: 5px;
+  grid-area: enlace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
 .enlace:hover {
-    color: rgb(245, 243, 240);
+  color: rgb(245, 243, 240);
 }
-
-h1 {
-    font-size: 40px;
-    font-style: oblique;
-    text-decoration: underline;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-h2 {
-    font-size: 30px;
-    font-style: oblique;
-    text-decoration: underline;
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-h3 {
-    font-size: 15px;
-    font-style: oblique;
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
-}
-
-p {
-    font-weight: bold;
-    font-style: oblique;
-    padding: 15px;
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-  }
 
 .listainfo {
-    font-weight: bold;
-    font-style: oblique;
-    padding: 15px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-weight: bold;
+  font-style: oblique;
+  padding: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-dt {
-    text-decoration: underline; 
+.listainfo dt {
+  text-decoration: underline;
 }
-
-dd{
-    text-indent: 20px
+.listainfo dt dd {
+  text-indent: 20px;
 }
 
 .formulario {
-    font-style: oblique;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    display: grid;
-    grid-template-areas: 
-    ". nf ."
-    ". af ."
-    ". mf ."
-    ". gf ."
-    ". cf ."
-    ". bf .";
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50px 50px 50px 50px 300px 90px;
+  font-style: oblique;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  display: grid;
+  grid-template-areas: ". nf ." ". af ." ". mf ." ". gf ." ". cf ." ". bf .";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50px 50px 50px 50px 300px 90px;
 }
 
-.btn-primary{
-    padding: 5px;
-    border-width: 3px; 
-    border-style: outset; 
-    border-color: rgb(100, 52, 29) rgb(0, 0, 0) rgb(100, 52, 29) rgb(0, 0, 0);
-    font-style: oblique;
-    background-color: rgb(126, 97, 85);
-    color: black;
-    font-weight: bold;
+.btn-primary {
+  padding: 5px;
+  border-width: 3px;
+  border-style: outset;
+  border-color: rgb(100, 52, 29) rgb(0, 0, 0) rgb(100, 52, 29) rgb(0, 0, 0);
+  font-style: oblique;
+  background-color: rgb(126, 97, 85);
+  color: black;
+  font-weight: bold;
 }
 .btn-primary:hover {
-    background-color: rgb(100, 52, 29); 
-    color: white; 
-    border-color: blanchedalmond;
+  background-color: rgb(100, 52, 29);
+  color: white;
+  border-color: blanchedalmond;
 }
-.nave{
-    height: 20px;
+
+.nave {
+  height: 20px;
 }
-/* Estilos para el pie de página */
+
 #pie {
-    background-color: rgb(100, 52, 29);
-    font-size: 112.5%;
-    font-style: oblique;
-    color: rgb(238, 134, 15);
-    height: 165px;
+  background-color: rgb(100, 52, 29);
+  font-size: 112.5%;
+  font-style: oblique;
+  color: rgb(238, 134, 15);
+  height: 165px;
 }
-/* flex */
+#pie .listasfoot {
+  list-style-type: none;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#pie .listasredes {
+  list-style-type: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#pie h3 {
+  font-size: 15px;
+  font-style: oblique;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 #encabezado {
-    background-color: rgb(100, 52, 29);
-    font-size: 112.5%;
-    font-style: oblique;
-    color: rgb(238, 134, 15);
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+  background-color: rgb(100, 52, 29);
+  font-size: 112.5%;
+  font-style: oblique;
+  color: rgb(238, 134, 15);
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
-.listasnav{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
+#encabezado .listasnav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
 }
 
-/*media queries nav*/
 @media screen and (max-width: 584px) {
-    #encabezado {
-      justify-content:left;
-      align-items: start;
-      height: 165px;
-    }
-    .listasnav {
-      flex-direction: column;
-      align-items: start;
-    }
+  #encabezado {
+    justify-content: left;
+    align-items: start;
+    height: 165px;
+  }
+  .listasnav {
+    flex-direction: column;
+    align-items: start;
+  }
 }
-
-/* grid */
-/*index*/ 
-/*main*/
-
 .grid1 {
-    display: grid;
-    /* Definición de áreas de la cuadrícula y tamaños de columnas y filas */
-    grid-template-areas: 
-        "titulo titulo"
-        "sub1   sub5 "
-        "sub2   sub5"
-        "sub3   sub5"
-        "sub4   sub5";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 180px 150px 185px 150px 150px;
+  display: grid;
+  grid-template-areas: "titulo titulo" "sub1   sub5 " "sub2   sub5" "sub3   sub5" "sub4   sub5";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 180px 150px 185px 150px 150px;
+}
+.grid1 .titulo {
+  grid-area: titulo;
+  justify-self: center;
+}
+.grid1 .sub1 {
+  grid-area: sub1;
+}
+.grid1 .sub2 {
+  grid-area: sub2;
+}
+.grid1 .sub3 {
+  grid-area: sub3;
+}
+.grid1 .sub4 {
+  grid-area: sub4;
+}
+.grid1 .sub5 {
+  grid-area: sub5;
 }
 
-.titulo {
-    grid-area: titulo;
-    justify-self: center;
-}
-
-.sub1 {
-    grid-area: sub1;
-}
-
-.sub2 {
-    grid-area: sub2;
-}
-
-.sub3 {
-    grid-area: sub3;
-}
-
-.sub4 {
-    grid-area: sub4;
-}
-
-.sub5 {
-    grid-area: sub5;
-}
-
-/*media queries grid1*/
 @media screen and (max-width: 1024px) {
-    .grid1 {
-        grid-template-areas:
-        "titulo"
-        "sub1"
-        "sub2"
-        "sub3"
-        "sub4";
-        grid-template-columns: 100%;
-        grid-template-rows: 5% 20% 16% 20% 20%;
-    }
+  .grid1 {
+    grid-template-areas: "titulo" "sub1" "sub2" "sub3" "sub4";
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 20% 16% 20% 20%;
+  }
 }
 @media screen and (max-width: 885px) {
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 25px;
-    }
-    h3 {
-        font-size: 13px;
-    }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 13px;
+  }
 }
-
-/*foot*/ 
-
 .gridfoot {
-    display: grid;  
-    grid-template-areas:
-        "enlace copyr logo redes maps";
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 150px;
+  display: grid;
+  grid-template-areas: "enlace copyr logo redes maps";
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 150px;
+}
+.gridfoot .redes {
+  grid-area: redes;
+  justify-self: center;
+}
+.gridfoot .logo {
+  grid-area: logo;
+  justify-self: center;
+}
+.gridfoot .maps {
+  grid-area: maps;
+  justify-self: center;
+}
+.gridfoot .copyr {
+  grid-area: copyr;
+  justify-content: end;
+  align-content: end;
+  padding-top: 110px;
 }
 
-.redes {
-    grid-area: redes;
-    justify-self: center;
-}
-
-.logo {
-    grid-area: logo;
-    justify-self: center;
-}   
-
-.maps {
-    grid-area: maps;
-    justify-self: center;
-}
-
-.copyr {
-    grid-area: copyr;
-    justify-content: end;
-    align-content: end;
-    padding-top: 110px; 
-}
-
-/*media queries foot*/
 @media screen and (max-width: 885px) {
-    .gridfoot {
-        grid-template-areas:
-        "enlace" 
-        "logo" 
-        "redes" 
-        "maps"
-        "copyr";
-        grid-template-columns: 100%;
-        grid-row:  1fr 1fr 0.2fr 1fr 0.8fr;
-    }
-    #pie {
-        height: 100%;
-    }
+  .gridfoot {
+    grid-template-areas: "enlace" "logo" "redes" "maps" "copyr";
+    grid-template-columns: 100%;
+    grid-row: 1fr 1fr 0.2fr 1fr 0.8fr;
+  }
+  #pie {
+    height: 100%;
+  }
 }
-
-/*alfareria*/ 
-/*main*/
-
 .grid2 {
-    display: grid;
-    grid-template-areas: 
-        "Atitulo Atitulo"
-        "Aintro Aimg1"
-        "Amate Aimg2"
-        "Atec Aimg3"
-        "Afyu Aimg4"
-        "Aute Aimg5"
-        "Acom Acom";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 220px 220px 320px 270px 295px 20px;
-    row-gap: 15px
+  display: grid;
+  grid-template-areas: "Atitulo Atitulo" "Aintro Aimg1" "Amate Aimg2" "Atec Aimg3" "Afyu Aimg4" "Aute Aimg5" "Acom Acom";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 220px 220px 320px 270px 295px 20px;
+  row-gap: 15px;
 }
-
-.Atitulo {
-    grid-area: Atitulo;
-    justify-self: center;
+.grid2 .Atitulo {
+  grid-area: Atitulo;
+  justify-self: center;
 }
-
-.Aintro {
-    grid-area: Aintro;
+.grid2 .Aintro {
+  grid-area: Aintro;
 }
-
-.Amate {
-    grid-area: Amate;
+.grid2 .Amate {
+  grid-area: Amate;
 }
-
-.Atec {
-    grid-area: Atec;
+.grid2 .Atec {
+  grid-area: Atec;
 }
-
-.Afyu {
-    grid-area: Afyu;
+.grid2 .Afyu {
+  grid-area: Afyu;
 }
-
-.Aute {
-    grid-area: Aute;
+.grid2 .Aute {
+  grid-area: Aute;
 }
-
-.Acom {
-    grid-area: Acom;
-    justify-self: center;
+.grid2 .Acom {
+  grid-area: Acom;
+  justify-self: center;
 }
-
-.Aimg1 {
-    grid-area: Aimg1;
+.grid2 .Aimg1 {
+  grid-area: Aimg1;
 }
-
-.Aimg2 {
-    grid-area: Aimg2;
+.grid2 .Aimg2 {
+  grid-area: Aimg2;
 }
-
-.Aimg3 {
-    grid-area: Aimg3;
+.grid2 .Aimg3 {
+  grid-area: Aimg3;
 }
-
-.Aimg4 {
-    grid-area: Aimg4;
+.grid2 .Aimg4 {
+  grid-area: Aimg4;
 }
-
-.Aimg5 {
-    grid-area: Aimg5;
+.grid2 .Aimg5 {
+  grid-area: Aimg5;
 }
-
-/*media queries alfareria*/
 
 @media screen and (max-width: 885px) {
-    .grid2 {
-        grid-template-areas:
-        "Atitulo"
-        "Aintro"
-        "Amate"
-        "Atec"
-        "Afyu"
-        "Aute";
-        grid-template-columns: 100%;
-        grid-template-rows: 2% 16% 13% 21% 18% 17% 2%;
-    }
+  .grid2 {
+    grid-template-areas: "Atitulo" "Aintro" "Amate" "Atec" "Afyu" "Aute";
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 16% 13% 21% 18% 17% 2%;
+  }
 }
 @media screen and (max-width: 885px) {
-    .Aimg1, .Aimg2, .Aimg3, .Aimg4, .Aimg5, .Acom {
-      display: none;
-    }
+  .Aimg1, .Aimg2, .Aimg3, .Aimg4, .Aimg5, .Acom {
+    display: none;
+  }
 }
-
-
-/*Cursos*/
-/*grid cursos*/
-
 .grid3 {
-    display: grid;
-    grid-template-areas: 
-        "titulo titulo"
-        "ini nifa"
-        "ava nifa";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 270px 300px;
-    row-gap: 15px;
+  display: grid;
+  grid-template-areas: "titulo titulo" "ini nifa" "ava nifa";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 270px 300px;
+  row-gap: 15px;
 }
-
-.ctitulo {
-    grid-area: titulo;
-    justify-self: center;
+.grid3 .ctitulo {
+  grid-area: titulo;
+  justify-self: center;
 }
-
-.cini {
-    grid-area: ini;
-    padding: 0px 180px;
+.grid3 .cini {
+  grid-area: ini;
+  padding: 0px 180px;
 }
-
-.cava {
-    grid-area: ava;
-    padding: 0px 180px;
+.grid3 .cava {
+  grid-area: ava;
+  padding: 0px 180px;
 }
-
-.cnifa {
-    grid-area: nifa;
-    padding: 0px 200px;
+.grid3 .cnifa {
+  grid-area: nifa;
+  padding: 0px 200px;
 }
-
-
-/*grid tuto*/
 
 .grid4 {
-    display: grid;
-    grid-template-areas: 
-        "titulo titulo"
-        "img1 img2"
-        "img3 img4"
-        "up up";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 300px 300px 20px;
-    row-gap: 20px;
+  display: grid;
+  grid-template-areas: "titulo titulo" "img1 img2" "img3 img4" "up up";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 300px 300px 20px;
+  row-gap: 20px;
 }
-
-.ctuto {
-    grid-area: titulo;
-    justify-self: center;
+.grid4 .ctuto {
+  grid-area: titulo;
+  justify-self: center;
 }
-
-.ccom {
-    grid-area: up;
-    justify-self: center;
+.grid4 .ccom {
+  grid-area: up;
+  justify-self: center;
 }
-
-.Cimg1 {
-    grid-area: img1;
+.grid4 .Cimg1 {
+  grid-area: img1;
 }
-
-.Cimg2 {
-    grid-area: img2;
+.grid4 .Cimg2 {
+  grid-area: img2;
 }
-
-.Cimg3 {
-    grid-area: img3;
+.grid4 .Cimg3 {
+  grid-area: img3;
 }
-
-.Cimg4 {
-    grid-area: img4;
+.grid4 .Cimg4 {
+  grid-area: img4;
 }
-
-.video {
-    padding-left: 320px;
+.grid4 .video {
+  padding-left: 320px;
 }
-
-/*Grid Galeria*/
 
 .gridgaleria {
-    display: grid;
-    grid-template-areas: 
-        ". t ."
-        "img1 img2 img3"
-        "img4 img5 img6"
-        "img7 . img8"
-        ". . .";
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50px 200px 200px 200px;
-    row-gap: 50px;
-    column-gap: 50px;
+  display: grid;
+  grid-template-areas: ". t ." "img1 img2 img3" "img4 img5 img6" "img7 . img8" ". . .";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50px 200px 200px 200px;
+  row-gap: 50px;
+  column-gap: 50px;
 }
-
-.titulog {
-    grid-area: t;
-    justify-self: center;
+.gridgaleria .titulog {
+  grid-area: t;
+  justify-self: center;
 }
-
-.gimg1 {
-    grid-area: img1;
-    justify-self: center;
+.gridgaleria .gimg1 {
+  grid-area: img1;
+  justify-self: center;
 }
-
-.gimg2 {
-    grid-area: img2;
-    justify-self: center;
+.gridgaleria .gimg2 {
+  grid-area: img2;
+  justify-self: center;
 }
-
-.gimg3 {
-    grid-area: img3;
-    justify-self: center;
+.gridgaleria .gimg3 {
+  grid-area: img3;
+  justify-self: center;
 }
-
-.gimg4 {
-    grid-area: img4;
-    justify-self: center;
+.gridgaleria .gimg4 {
+  grid-area: img4;
+  justify-self: center;
 }
-
-.gimg5 {
-    grid-area: img5;
-    justify-self: center;
+.gridgaleria .gimg5 {
+  grid-area: img5;
+  justify-self: center;
 }
-
-.gimg6 {
-    grid-area: img6;
-    justify-self: center;
+.gridgaleria .gimg6 {
+  grid-area: img6;
+  justify-self: center;
 }
-
-.gimg7 {
-    grid-area: img7;
-    justify-self: center;
+.gridgaleria .gimg7 {
+  grid-area: img7;
+  justify-self: center;
 }
-
-.gimg8 {
-    grid-area: img8;
-    justify-self: center;
+.gridgaleria .gimg8 {
+  grid-area: img8;
+  justify-self: center;
 }
-
-/*media queries alfareria*/
 
 @media screen and (max-width: 425px) {
-    .gridgaleria {
-        grid-template-areas:
-        "t"
-        "img1"
-        "img2"
-        "img3"
-        "img4"
-        "img5"
-        "img6"
-        "img7"
-        "img8";
-        grid-template-columns: 100%;
-        grid-template-rows: 35px, repeat(8, 200px);
-    }
+  .gridgaleria {
+    grid-template-areas: "t" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
+    grid-template-columns: 100%;
+    grid-template-rows: 35px, repeat(8, 200px);
+  }
 }
 @media (min-width: 425px) and (max-width: 768px) {
-    .gridgaleria {
-        grid-template-areas:
-        "t t"
-        "img1 img2"
-        "img3 img4"
-        "img5 img6"
-        "img7 img8";
-        grid-template-columns:  50% 50%;
-        grid-row: 35px, 200px, 200px, 200px, 200px;
-    }
+  .gridgaleria {
+    grid-template-areas: "t t" "img1 img2" "img3 img4" "img5 img6" "img7 img8";
+    grid-template-columns: 50% 50%;
+    grid-row: 35px, 200px, 200px, 200px, 200px;
+  }
 }
-
 @media screen and (min-width: 768px) {
-.gridgaleria {
+  .gridgaleria {
     display: grid;
-    grid-template-areas: 
-        "t t t"
-        "img1 img2 img3"
-        "img4 img5 img6"
-        "img7 . img8"
-        ". . .";
+    grid-template-areas: "t t t" "img1 img2 img3" "img4 img5 img6" "img7 . img8" ". . .";
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50px 200px 200px 200px;
     row-gap: 50px;
-    }
+  }
 }
-
-/* grid */
-/*contacto*/ 
-
 .gridtc {
-    display: grid;
-    grid-template-areas: 
-        "tc1 tc1 tc1"
-        "tc2 tc2 tc2";
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50px 50px;
-    row-gap: 20px;
+  display: grid;
+  grid-template-areas: "tc1 tc1 tc1" "tc2 tc2 tc2";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50px 50px;
+  row-gap: 20px;
 }
 
 .tc1 {
-    grid-area: tc1;
-    justify-self: center;
+  grid-area: tc1;
+  justify-self: center;
 }
 
 .tc2 {
-    grid-area: tc2;
-    justify-self: center;
+  grid-area: tc2;
+  justify-self: center;
 }
 
-
 .namefor {
-    grid-area: nf;
-    justify-self: center;
+  grid-area: nf;
+  justify-self: center;
 }
 
 .apeform {
-    grid-area: af;
-    justify-self: center;
+  grid-area: af;
+  justify-self: center;
 }
 
 .mailform {
-    grid-area: mf;
-    justify-self: center;
+  grid-area: mf;
+  justify-self: center;
 }
 
 .genform {
-    grid-area: gf;
-    justify-self: center;
+  grid-area: gf;
+  justify-self: center;
 }
 
 .consuform {
-    grid-area: cf;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  grid-area: cf;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .botform {
-    grid-area: bf;
-    justify-self: center;
+  grid-area: bf;
+  justify-self: center;
 }
-
-/*pagination BS*/
 
 .page-link {
-    background-color: rgb(100, 52, 29);
-    color: black; 
-    border-color: rgb(196 171 155);
-    font-weight: bold;
+  background-color: rgb(100, 52, 29);
+  color: black;
+  border-color: rgb(196, 171, 155);
+  font-weight: bold;
 }
-
 .page-link:hover {
-    background-color: #eea236;
-    color: white;
+  background-color: rgb(238, 134, 15);
+  color: white;
 }
 
 .pagination .page-item:active .page-link {
-    background-color: #eea236;
-    color: white; 
+  background-color: rgb(238, 134, 15);
+  color: white;
 }
+
+/*# sourceMappingURL=styles.css.map */
