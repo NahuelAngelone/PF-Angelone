@@ -10,6 +10,16 @@ $Colorfondo2: rgb(100, 52, 29);
 $Colorenlace1: rgb(238, 134, 15);
 $fuente-comun: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+//ejemplo mixin
+$colores: (
+  link: $Colorenlace1,
+);
+@mixin color-theme($color) {
+  color: map-get($colores, $color);
+  font-family: $fuente-comun;
+}
+
+
 // Estilos
 
 #info{
@@ -40,13 +50,14 @@ $fuente-comun: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 
-// Estilos para los enlaces 
+// Estilos para los enlaces
+
 .enlace {
   text-decoration: none;
-  color: $Colorenlace1;
+  @include color-theme(link);
   padding: 5px;
   grid-area: enlace;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $fuente-comun;
   &:hover {
       color: rgb(245, 243, 240);
   }
@@ -56,7 +67,7 @@ $fuente-comun: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   font-style: oblique;
   padding: 15px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: $fuente-comun;
   dt {
       text-decoration: underline;
       dd {
@@ -74,22 +85,22 @@ $fuente-comun: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: $Colorfondo2;
   font-size: 112.5%;
   font-style: oblique;
-  color: $Colorenlace1;
+  @include color-theme(link);
   height: 165px;
   .listasfoot {
       list-style-type: none;
       padding: 10px;
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+      font-family: $fuente-comun;
   }
   .listasredes {
       list-style-type: none;
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+      font-family: $fuente-comun;
   }  
   h3 {
       font-size: 15px;
       font-style: oblique;
       text-align: center;
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+      font-family: $fuente-comun;
   
   }
 }
@@ -99,7 +110,7 @@ $fuente-comun: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: $Colorfondo2;
   font-size: 112.5%;
   font-style: oblique;
-  color: $Colorenlace1;
+  @include color-theme(link);
   height: 150px;
   display: flex;
   flex-direction: row;
@@ -119,7 +130,7 @@ $fuente-comun: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   #encabezado {
     justify-content:left;
     align-items: start;
-    height: 165px;
+    height: 175px;
     .listasnav {
       flex-direction: column;
       align-items: start;

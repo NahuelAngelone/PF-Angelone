@@ -12,7 +12,7 @@
         "sub3   sub5"
         "sub4   sub5";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 180px 150px 185px 150px 150px;
+    grid-template-rows: 50px 190px 160px 185px 150px 150px;
     .titulo {
         grid-area: titulo;
         justify-self: center;
@@ -74,7 +74,7 @@
         "sub3   sub5"
         "sub4   sub5";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50px 290px 200px 270px 150px 150px;
+    grid-template-rows: 60px 320px 220px 310px 180px 150px;
     }
 }
 
