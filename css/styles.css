@@ -9,6 +9,10 @@
 #info #carouselExampleSlidesOnly {
   width: 300px;
   padding-bottom: 10px;
+  transition: transform 2s;
+}
+#info #carouselExampleSlidesOnly:hover {
+  transform: scale(1.5);
 }
 #info h1 {
   font-size: 40px;
@@ -480,34 +484,66 @@
 .gridgaleria .gimg1 {
   grid-area: img1;
   justify-self: center;
+  transition: transform 2s;
+}
+.gridgaleria .gimg1:hover {
+  transform: scale(1.5);
 }
 .gridgaleria .gimg2 {
   grid-area: img2;
   justify-self: center;
+  transition: transform 2s;
+}
+.gridgaleria .gimg2:hover {
+  transform: scale(1.5);
 }
 .gridgaleria .gimg3 {
   grid-area: img3;
   justify-self: center;
+  transition: transform 2s;
+}
+.gridgaleria .gimg3:hover {
+  transform: scale(1.5);
 }
 .gridgaleria .gimg4 {
   grid-area: img4;
   justify-self: center;
+  transition: transform 2s;
+}
+.gridgaleria .gimg4:hover {
+  transform: scale(1.5);
 }
 .gridgaleria .gimg5 {
   grid-area: img5;
   justify-self: center;
+  transition: transform 2s;
+}
+.gridgaleria .gimg5:hover {
+  transform: scale(1.5);
 }
 .gridgaleria .gimg6 {
   grid-area: img6;
   justify-self: center;
+  transition: transform 2s;
+}
+.gridgaleria .gimg6:hover {
+  transform: scale(1.5);
 }
 .gridgaleria .gimg7 {
   grid-area: img7;
   justify-self: center;
+  transition: transform 2s;
+}
+.gridgaleria .gimg7:hover {
+  transform: scale(1.5);
 }
 .gridgaleria .gimg8 {
   grid-area: img8;
   justify-self: center;
+  transition: transform 2s;
+}
+.gridgaleria .gimg8:hover {
+  transform: scale(1.5);
 }
 
 @media screen and (max-width: 485px) {
