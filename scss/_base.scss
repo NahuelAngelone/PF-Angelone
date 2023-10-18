@@ -9,3 +9,170 @@ $Colorfondo1: rgb(196 171 155);
 $Colorfondo2: rgb(100, 52, 29);
 $Colorenlace1: rgb(238, 134, 15);
 $fuente-comun: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+// Estilos
+
+#info{
+  background-color: $Colorfondo1;
+  #carouselExampleSlidesOnly {
+      width: 300px;
+      padding-bottom: 10px;
+  }
+  h1 {
+      font-size: 40px;
+      font-style: oblique;
+      text-decoration: underline;
+      font-family: $fuente-comun;
+  }
+  h2 {
+      font-size: 30px;
+      font-style: oblique;
+      text-decoration: underline;
+      text-align: center;
+      font-family: $fuente-comun;
+  }
+  p {
+      font-weight: bold;
+      font-style: oblique;
+      padding: 15px;
+      text-align: center;
+      font-family: $fuente-comun;
+    }
+}
+
+// Estilos para los enlaces 
+.enlace {
+  text-decoration: none;
+  color: $Colorenlace1;
+  padding: 5px;
+  grid-area: enlace;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  &:hover {
+      color: rgb(245, 243, 240);
+  }
+}
+
+.listainfo {
+  font-weight: bold;
+  font-style: oblique;
+  padding: 15px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  dt {
+      text-decoration: underline;
+      dd {
+          text-indent: 20px
+      } 
+  }
+  
+}
+
+.nave{
+  height: 20px;
+}
+// Estilos para el pie de página 
+#pie {
+  background-color: $Colorfondo2;
+  font-size: 112.5%;
+  font-style: oblique;
+  color: $Colorenlace1;
+  height: 165px;
+  .listasfoot {
+      list-style-type: none;
+      padding: 10px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  .listasredes {
+      list-style-type: none;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }  
+  h3 {
+      font-size: 15px;
+      font-style: oblique;
+      text-align: center;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
+  }
+}
+// flex 
+
+#encabezado {
+  background-color: $Colorfondo2;
+  font-size: 112.5%;
+  font-style: oblique;
+  color: $Colorenlace1;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  .listasnav{
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+  }
+}
+
+
+// media queries nav
+@media screen and (max-width: 584px) {
+  #encabezado {
+    justify-content:left;
+    align-items: start;
+    height: 165px;
+    .listasnav {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}
+
+
+// foot
+
+.gridfoot {
+  display: grid;  
+  grid-template-areas:
+      "enlace copyr logo redes maps";
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 150px;
+  .redes {
+      grid-area: redes;
+      justify-self: center;
+  }
+  
+  .logo {
+      grid-area: logo;
+      justify-self: center;
+  }   
+  
+  .maps {
+      grid-area: maps;
+      justify-self: center;
+  }
+  
+  .copyr {
+      grid-area: copyr;
+      justify-content: end;
+      align-content: end;
+      padding-top: 110px; 
+  }
+}
+
+
+// media queries foot
+@media screen and (max-width: 885px) {
+  .gridfoot {
+      grid-template-areas:
+      "enlace" 
+      "logo" 
+      "redes" 
+      "maps"
+      "copyr";
+      grid-template-columns: 100%;
+      grid-row:  1fr 1fr 0.2fr 1fr 0.8fr;
+  }
+  #pie {
+      height: 100%;
+  }
+}

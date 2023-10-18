@@ -1,0 +1,97 @@
+//grid 
+//index
+//main
+
+.grid1 {
+    display: grid;
+    // Definición de áreas de la cuadrícula y tamaños de columnas y filas 
+    grid-template-areas: 
+        "titulo titulo"
+        "sub1   sub5 "
+        "sub2   sub5"
+        "sub3   sub5"
+        "sub4   sub5";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 180px 150px 185px 150px 150px;
+    .titulo {
+        grid-area: titulo;
+        justify-self: center;
+    }
+    
+    .sub1 {
+        grid-area: sub1;
+    }
+    
+    .sub2 {
+        grid-area: sub2;
+    }
+    
+    .sub3 {
+        grid-area: sub3;
+    }
+    
+    .sub4 {
+        grid-area: sub4;
+    }
+    
+    .sub5 {
+        grid-area: sub5;
+    }
+}
+
+
+//media queries grid1 
+
+@media screen and (max-width: 1024px) {
+    .grid1 {
+        grid-template-areas:
+        "titulo"
+        "sub1"
+        "sub2"
+        "sub3"
+        "sub4";
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 20% 16% 20% 20%;
+    }
+}
+@media screen and (max-width: 885px) {
+    #info h1 {
+        font-size: 30px;
+    }
+    #info h2 {
+        font-size: 25px;
+    }
+    #info h3 {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .grid1 {
+    grid-template-areas: 
+        "titulo titulo"
+        "sub1   sub5 "
+        "sub2   sub5"
+        "sub3   sub5"
+        "sub4   sub5";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 290px 200px 270px 150px 150px;
+    }
+}
+
+// pagination BS
+
+.page-link {
+    background-color: $Colorfondo2;
+    color: black; 
+    border-color: rgb(196 171 155);
+    font-weight: bold;
+    &:hover {
+        background-color: $Colorenlace1;
+        color: white;
+    }
+}
+
+.pagination .page-item:active .page-link {
+    background-color: $Colorenlace1;
+    color: white; 
+}

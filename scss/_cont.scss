@@ -1,0 +1,91 @@
+
+//Formulario de contacto
+
+.formulario {
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: grid;
+    grid-template-areas: 
+    ". nf ."
+    ". af ."
+    ". mf ."
+    ". gf ."
+    ". cf ."
+    ". bf .";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px 50px 50px 50px 300px 90px;
+}
+
+.btn-primary{
+    padding: 5px;
+    border-width: 3px; 
+    border-style: outset; 
+    border-color: $Colorfondo2 rgb(0, 0, 0) $Colorfondo2 rgb(0, 0, 0);
+    font-style: oblique;
+    background-color: rgb(126, 97, 85);
+    color: black;
+    font-weight: bold;
+    &:hover {
+        background-color: $Colorfondo2; 
+        color: white; 
+        border-color: blanchedalmond;
+    }
+}
+
+// grid 
+// contacto
+
+.gridtc {
+    display: grid;
+    grid-template-areas: 
+        "tc1 tc1 tc1"
+        "tc2 tc2 tc2";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px 50px;
+    row-gap: 20px;
+}
+
+.tc1 {
+    grid-area: tc1;
+    justify-self: center;
+}
+
+.tc2 {
+    grid-area: tc2;
+    justify-self: center;
+}
+
+
+.namefor {
+    grid-area: nf;
+    justify-self: center;
+}
+
+.apeform {
+    grid-area: af;
+    justify-self: center;
+}
+
+.mailform {
+    grid-area: mf;
+    justify-self: center;
+}
+
+.genform {
+    grid-area: gf;
+    justify-self: center;
+}
+
+.consuform {
+    grid-area: cf;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botform {
+    grid-area: bf;
+    justify-self: center;
+}

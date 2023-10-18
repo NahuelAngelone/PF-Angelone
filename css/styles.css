@@ -55,32 +55,6 @@
   text-indent: 20px;
 }
 
-.formulario {
-  font-style: oblique;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  display: grid;
-  grid-template-areas: ". nf ." ". af ." ". mf ." ". gf ." ". cf ." ". bf .";
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 50px 50px 50px 50px 300px 90px;
-}
-
-.btn-primary {
-  padding: 5px;
-  border-width: 3px;
-  border-style: outset;
-  border-color: rgb(100, 52, 29) rgb(0, 0, 0) rgb(100, 52, 29) rgb(0, 0, 0);
-  font-style: oblique;
-  background-color: rgb(126, 97, 85);
-  color: black;
-  font-weight: bold;
-}
-.btn-primary:hover {
-  background-color: rgb(100, 52, 29);
-  color: white;
-  border-color: blanchedalmond;
-}
-
 .nave {
   height: 20px;
 }
@@ -137,6 +111,41 @@
     align-items: start;
   }
 }
+.gridfoot {
+  display: grid;
+  grid-template-areas: "enlace copyr logo redes maps";
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 150px;
+}
+.gridfoot .redes {
+  grid-area: redes;
+  justify-self: center;
+}
+.gridfoot .logo {
+  grid-area: logo;
+  justify-self: center;
+}
+.gridfoot .maps {
+  grid-area: maps;
+  justify-self: center;
+}
+.gridfoot .copyr {
+  grid-area: copyr;
+  justify-content: end;
+  align-content: end;
+  padding-top: 110px;
+}
+
+@media screen and (max-width: 885px) {
+  .gridfoot {
+    grid-template-areas: "enlace" "logo" "redes" "maps" "copyr";
+    grid-template-columns: 100%;
+    grid-row: 1fr 1fr 0.2fr 1fr 0.8fr;
+  }
+  #pie {
+    height: 100%;
+  }
+}
 .grid1 {
   display: grid;
   grid-template-areas: "titulo titulo" "sub1   sub5 " "sub2   sub5" "sub3   sub5" "sub4   sub5";
@@ -188,41 +197,22 @@
     grid-template-rows: 50px 290px 200px 270px 150px 150px;
   }
 }
-.gridfoot {
-  display: grid;
-  grid-template-areas: "enlace copyr logo redes maps";
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 150px;
+.page-link {
+  background-color: rgb(100, 52, 29);
+  color: black;
+  border-color: rgb(196, 171, 155);
+  font-weight: bold;
 }
-.gridfoot .redes {
-  grid-area: redes;
-  justify-self: center;
-}
-.gridfoot .logo {
-  grid-area: logo;
-  justify-self: center;
-}
-.gridfoot .maps {
-  grid-area: maps;
-  justify-self: center;
-}
-.gridfoot .copyr {
-  grid-area: copyr;
-  justify-content: end;
-  align-content: end;
-  padding-top: 110px;
+.page-link:hover {
+  background-color: rgb(238, 134, 15);
+  color: white;
 }
 
-@media screen and (max-width: 885px) {
-  .gridfoot {
-    grid-template-areas: "enlace" "logo" "redes" "maps" "copyr";
-    grid-template-columns: 100%;
-    grid-row: 1fr 1fr 0.2fr 1fr 0.8fr;
-  }
-  #pie {
-    height: 100%;
-  }
+.pagination .page-item:active .page-link {
+  background-color: rgb(238, 134, 15);
+  color: white;
 }
+
 .grid2 {
   display: grid;
   grid-template-areas: "Atitulo Atitulo" "Aintro Aimg1" "Amate Aimg2" "Atec Aimg3" "Afyu Aimg4" "Aute Aimg5" "Acom Acom";
@@ -295,6 +285,83 @@
     display: none;
   }
 }
+.formulario {
+  font-style: oblique;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  display: grid;
+  grid-template-areas: ". nf ." ". af ." ". mf ." ". gf ." ". cf ." ". bf .";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50px 50px 50px 50px 300px 90px;
+}
+
+.btn-primary {
+  padding: 5px;
+  border-width: 3px;
+  border-style: outset;
+  border-color: rgb(100, 52, 29) rgb(0, 0, 0) rgb(100, 52, 29) rgb(0, 0, 0);
+  font-style: oblique;
+  background-color: rgb(126, 97, 85);
+  color: black;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: rgb(100, 52, 29);
+  color: white;
+  border-color: blanchedalmond;
+}
+
+.gridtc {
+  display: grid;
+  grid-template-areas: "tc1 tc1 tc1" "tc2 tc2 tc2";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50px 50px;
+  row-gap: 20px;
+}
+
+.tc1 {
+  grid-area: tc1;
+  justify-self: center;
+}
+
+.tc2 {
+  grid-area: tc2;
+  justify-self: center;
+}
+
+.namefor {
+  grid-area: nf;
+  justify-self: center;
+}
+
+.apeform {
+  grid-area: af;
+  justify-self: center;
+}
+
+.mailform {
+  grid-area: mf;
+  justify-self: center;
+}
+
+.genform {
+  grid-area: gf;
+  justify-self: center;
+}
+
+.consuform {
+  grid-area: cf;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botform {
+  grid-area: bf;
+  justify-self: center;
+}
+
 .grid3 {
   display: grid;
   grid-template-areas: "titulo titulo" "ini nifa" "ava nifa";
@@ -462,72 +529,6 @@
     grid-template-rows: 50px 200px 200px 200px;
     row-gap: 50px;
   }
-}
-.gridtc {
-  display: grid;
-  grid-template-areas: "tc1 tc1 tc1" "tc2 tc2 tc2";
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 50px 50px;
-  row-gap: 20px;
-}
-
-.tc1 {
-  grid-area: tc1;
-  justify-self: center;
-}
-
-.tc2 {
-  grid-area: tc2;
-  justify-self: center;
-}
-
-.namefor {
-  grid-area: nf;
-  justify-self: center;
-}
-
-.apeform {
-  grid-area: af;
-  justify-self: center;
-}
-
-.mailform {
-  grid-area: mf;
-  justify-self: center;
-}
-
-.genform {
-  grid-area: gf;
-  justify-self: center;
-}
-
-.consuform {
-  grid-area: cf;
-  justify-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.botform {
-  grid-area: bf;
-  justify-self: center;
-}
-
-.page-link {
-  background-color: rgb(100, 52, 29);
-  color: black;
-  border-color: rgb(196, 171, 155);
-  font-weight: bold;
-}
-.page-link:hover {
-  background-color: rgb(238, 134, 15);
-  color: white;
-}
-
-.pagination .page-item:active .page-link {
-  background-color: rgb(238, 134, 15);
-  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
