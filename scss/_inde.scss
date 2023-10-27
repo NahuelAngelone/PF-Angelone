@@ -42,7 +42,7 @@
 
 //media queries grid1 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 425px) {
     .grid1 {
         grid-template-areas:
         "titulo"
@@ -51,9 +51,27 @@
         "sub3"
         "sub4";
         grid-template-columns: 100%;
-        grid-template-rows: 5% 20% 16% 20% 20%;
+        grid-template-rows: 50px 500px 360px 460px 150px;
+        max-height: 1900px;
     }
 }
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    .grid1 {
+        grid-template-areas:
+        "titulo"
+        "sub1"
+        "sub2"
+        "sub3"
+        "sub4";
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 400px 260px 360px 100px;
+        max-height: 1500px;
+    }
+}
+
+
+
 @media screen and (max-width: 885px) {
     #info h1 {
         font-size: 30px;

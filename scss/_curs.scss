@@ -69,6 +69,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px 300px 300px 20px;
     row-gap: 20px;
+    justify-items: center;
     .ctuto {
         grid-area: titulo;
         justify-self: center;
@@ -89,9 +90,7 @@
     .Cimg4 {
         grid-area: img4;
     }
-    .video {
-        padding-left: 320px;
-    }
+
 }
 
 @media screen and (max-width: 623px) {
@@ -106,6 +105,7 @@
         "up";
         grid-template-columns: 100%;
         grid-template-rows: 20px 300px 300px 300px;
+        justify-items: center;
 
     }
     .grid4 .video {
@@ -124,6 +124,7 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 50px 300px 300px 20px;
         row-gap: 20px;
+        justify-items: center;
     }
     .grid4 .video {
         padding: 10px;

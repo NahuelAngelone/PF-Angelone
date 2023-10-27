@@ -179,11 +179,20 @@
   grid-area: sub5;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 425px) {
   .grid1 {
     grid-template-areas: "titulo" "sub1" "sub2" "sub3" "sub4";
     grid-template-columns: 100%;
-    grid-template-rows: 5% 20% 16% 20% 20%;
+    grid-template-rows: 50px 500px 360px 460px 150px;
+    max-height: 1900px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+  .grid1 {
+    grid-template-areas: "titulo" "sub1" "sub2" "sub3" "sub4";
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 400px 260px 360px 100px;
+    max-height: 1500px;
   }
 }
 @media screen and (max-width: 885px) {
@@ -421,6 +430,7 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 50px 300px 300px 20px;
   row-gap: 20px;
+  justify-items: center;
 }
 .grid4 .ctuto {
   grid-area: titulo;
@@ -442,9 +452,6 @@
 .grid4 .Cimg4 {
   grid-area: img4;
 }
-.grid4 .video {
-  padding-left: 320px;
-}
 
 @media screen and (max-width: 623px) {
   .grid4 {
@@ -452,6 +459,7 @@
     grid-template-areas: "titulo" "img1" "img2" "img3" "img4" "up";
     grid-template-columns: 100%;
     grid-template-rows: 20px 300px 300px 300px;
+    justify-items: center;
   }
   .grid4 .video {
     padding: 10px;
@@ -464,6 +472,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px 300px 300px 20px;
     row-gap: 20px;
+    justify-items: center;
   }
   .grid4 .video {
     padding: 10px;
